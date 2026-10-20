@@ -1,0 +1,126 @@
+/* === GOOGLE FONTS & RESET === */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.8;
+    color: #2C3E50;
+    background-color: #FDFEFE;
+    margin: 0;
+    padding: 0;
+}
+
+/* === WARNA - Palet saya 3 warna HEX === */
+/* Warna 1: #2C3E50 (navy gelap) untuk teks */
+/* Warna 2: #E74C3C (merah aksen) untuk h1 dan hover */
+/* Warna 3: #ECF0F1 (abu muda) untuk background highlight */
+
+/* === TIPOGRAFI & HIERARKI === */
+h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #E74C3C;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #2C3E50;
+    border-bottom: 2px solid #E74C3C;
+    padding-bottom: 8px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* === LAYOUT - Trik Dosen === */
+main {
+    max-width: 728px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+/* === SELECTOR ID - hanya 1 elemen unik === */
+#main-header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+#main-header p {
+    color: #ECF0F1;
+}
+
+/* === SELECTOR CLASS - bisa dipakai berulang === */
+.highlight {
+    background-color: #FEF9E7;
+    padding: 12px;
+    border-left: 4px solid #E74C3C;
+    font-size: 14px;
+}
+
+.meta {
+    font-size: 13px;
+    color: #808B96;
+    text-align: left;
+}
+
+/* === SELECTOR DESCENDANT - semua p di dalam article === */
+article p {
+    margin-bottom: 18px;
+}
+
+/* === SELECTOR CHILD - hanya a yang langsung anak nav === */
+nav > a {
+    color: #ECF0F1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+/* === SELECTOR GROUPING === */
+h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* === PSEUDO-CLASS === */
+/* 1. :hover - saat mouse di atas link */
+a:hover {
+    color: #E74C3C;
+    text-decoration: underline;
+}
+
+/* 2. :first-child - paragraf pertama di article jadi bold */
+article p:first-child {
+    font-weight: 600;
+}
+
+/* 3. :nth-child(even) - zebra striping paragraf genap */
+article p:nth-child(even) {
+    background-color: #F8F9F9;
+    padding: 8px;
+}
+
+/* === BLOCKQUOTE & LIST === */
+blockquote {
+    font-style: italic;
+    border-left: 3px solid #E74C3C;
+    padding-left: 15px;
+    color: #5D6D7E;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2C3E50;
+    color: white;
+    margin-top: 40px;
+}
