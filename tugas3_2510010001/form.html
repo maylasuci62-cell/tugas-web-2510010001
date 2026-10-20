@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="UTF-8"><title>Form - 2510010001</title></head>
+<body>
+<header>
+  <h1>Mini Situs Formulir & Data</h1>
+  <nav><a href="data.html">Data Mahasiswa</a> | <a href="form.html">Form UKM</a></nav>
+</header>
+<main>
+  <h2>Form Pendaftaran UKM Programming</h2>
+  <form action="#" method="post">
+    <label for="nama">Nama Lengkap:</label><br>
+    <input type="text" id="nama" placeholder="Tulis nama lengkap" required minlength="3"><br><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" placeholder="mayla@uniska.ac.id" required><br><br>
+    
+    <label for="pass">Password:</label><br>
+    <input type="password" id="pass" placeholder="Minimal 8 karakter" required minlength="8"><br><br>
+    
+    <label for="umur">Umur:</label><br>
+    <input type="number" id="umur" placeholder="20" min="17" max="30" required><br><br>
+    
+    <label for="tgl">Tanggal Lahir:</label><br>
+    <input type="date" id="tgl" required><br><br>
+    
+    <fieldset>
+      <legend>Jenis Kelamin:</legend>
+      <input type="radio" name="jk" value="L" required> Laki-laki
+      <input type="radio" name="jk" value="P"> Perempuan
+    </fieldset><br>
+    
+    <fieldset>
+      <legend>Minat UKM:</legend>
+      <input type="checkbox" value="web"> Web Programming<br>
+      <input type="checkbox" value="jaringan"> Jaringan<br>
+      <input type="checkbox" value="desain"> Desain UI/UX
+    </fieldset><br>
+    
+    <label for="prodi">Prodi:</label><br>
+    <select id="prodi" required>
+      <option value="">--Pilih Prodi--</option>
+      <option>Teknik Informatika</option>
+      <option>Sistem Informasi</option>
+      <option>Manajemen Informatika</option>
+      <option>Teknik Komputer</option>
+    </select><br><br>
+    
+    <label for="alasan">Alasan Bergabung:</label><br>
+    <textarea id="alasan" rows="4" cols="40" placeholder="Tulis alasan..." required></textarea><br><br>
+    
+    <button type="submit">Kirim Pendaftaran</button>
+    <button type="reset">Reset</button>
+  </form>
+  <br>
+  <img src="diskusi.jpeg" alt="Foto diskusi UKM" width="350">
+</main>
+<footer><p>&copy; 2026 Mayla - 2510010001</p></footer>
+</body>
+</html>
